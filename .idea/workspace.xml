@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ace70b3-78a7-4cbc-bad3-733a29f3b0d5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/containers/live/index.js" afterPath="$PROJECT_DIR$/src/containers/live/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/live/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="345">
+              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,14 +122,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="1422" column="20" lean-forward="false" selection-start-line="1422" selection-start-column="20" selection-end-line="1422" selection-end-column="20" />
+            <state relative-caret-position="367">
+              <caret line="1350" column="18" lean-forward="false" selection-start-line="1350" selection-start-column="18" selection-end-line="1350" selection-end-column="18" />
               <folding>
                 <element signature="e#503#5080#2" expanded="true" />
-                <marker date="1529598805026" expanded="true" signature="30359:30408" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -146,8 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.nav ul</find>
-      <find>display--column</find>
       <find>groupe</find>
       <find>.team</find>
       <find>.card__title</find>
@@ -176,6 +173,8 @@
       <find>/*text</find>
       <find>format</find>
       <find>livescore</find>
+      <find>loading__text</find>
+      <find>.loading__wrapper .loading__text {</find>
     </findStrings>
     <replaceStrings>
       <replace>Teams</replace>
@@ -193,7 +192,6 @@
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/src/components/TeamCard.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/MatchCard.js" />
         <option value="$PROJECT_DIR$/src/containers/home/index.js" />
         <option value="$PROJECT_DIR$/src/containers/teams/index.js" />
@@ -201,6 +199,7 @@
         <option value="$PROJECT_DIR$/src/containers/groups/index.js" />
         <option value="$PROJECT_DIR$/src/containers/app/index.js" />
         <option value="$PROJECT_DIR$/src/containers/live/index.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
   </component>
@@ -350,7 +349,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38103000" />
+    <option name="totallyTimeSpent" value="38396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -799,17 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="1422" column="20" lean-forward="false" selection-start-line="1422" selection-start-column="20" selection-end-line="1422" selection-end-column="20" />
-          <folding>
-            <element signature="e#503#5080#2" expanded="true" />
-            <marker date="1529598805026" expanded="true" signature="30359:30408" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MatchCard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -877,10 +865,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/live/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="345">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="1350" column="18" lean-forward="false" selection-start-line="1350" selection-start-column="18" selection-end-line="1350" selection-end-column="18" />
+          <folding>
+            <element signature="e#503#5080#2" expanded="true" />
           </folding>
         </state>
       </provider>

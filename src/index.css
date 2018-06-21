@@ -1347,6 +1347,10 @@ footer {
     height: 32px;
   }
 
+  .loading__wrapper .loading__text {
+    fontt-size: 21px;
+  }
+
   .nav ul li a {
     font-size: 9px;
   }
