@@ -5,7 +5,7 @@ class Live extends React.Component {
   constructor(props) {
     super(props);
     this.url = `https://worldcup.sfg.io/matches/current`;
-    this.state = { data: [] };
+    this.state = { data: [], error: '' };
   }
 
   componentWillUnmount() {
@@ -28,6 +28,9 @@ class Live extends React.Component {
           }, 2000);
         })
         .catch(function(err) {
+          localslip.setState({
+            error: 'Trop de requêtes 👇 ! Calme la gâ️chette ⌛'
+          });
           document.querySelector('.loading__wrapper').classList.add('loaded');
           console.log(err);
         });
@@ -38,23 +41,7 @@ class Live extends React.Component {
     if (this.state.data.length > 0) {
       var MatchNodes = this.state.data.map(function(match, i) {
         return (
-          <MatchCard
-            venue={match.venue}
-            location={match.location}
-            status={match.status}
-            time={match.time}
-            fifa_id={match.fifa_id}
-            home_team={match.home_team}
-            home_team_statistics={match.home_team_statistics}
-            away_team={match.away_team}
-            away_team_statistics={match.away_team_statistics}
-            datetime={match.datetime}
-            winner={match.winner}
-            winner_code={match.winner_code}
-            format="YYYY/MM/DD"
-            live="true"
-            key={i}
-          />
+          <MatchCard match={match} format="YYYY/MM/DD" live="true" key={i} />
         );
       });
       return <section className="teamList display--row">{MatchNodes}</section>;

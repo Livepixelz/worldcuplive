@@ -6,7 +6,7 @@ class Groups extends React.Component {
     super(props);
 
     this.url = `https://worldcup.sfg.io/teams/group_results`;
-    this.state = { data: [], hour: 0, colors: this.colors };
+    this.state = { data: [], error: '' };
   }
 
   componentWillUnmount() {
