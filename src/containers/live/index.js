@@ -15,22 +15,23 @@ class Live extends React.Component {
   componentDidMount() {
     let localslip = this;
     let data = {};
-
-    fetch(this.url)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(result) {
-        data = result;
-        setTimeout(function() {
-          localslip.setState({ data: data });
+    localslip.interval = setInterval(() => {
+      fetch(this.url)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(result) {
+          data = result;
+          setTimeout(function() {
+            localslip.setState({ data: data });
+            document.querySelector('.loading__wrapper').classList.add('loaded');
+          }, 2000);
+        })
+        .catch(function(err) {
           document.querySelector('.loading__wrapper').classList.add('loaded');
-        }, 2000);
-      })
-      .catch(function(err) {
-        document.querySelector('.loading__wrapper').classList.add('loaded');
-        console.log(err);
-      });
+          console.log(err);
+        });
+    }, 10000);
   }
 
   render() {
@@ -56,9 +57,18 @@ class Live extends React.Component {
           />
         );
       });
+      return <section className="teamList display--row">{MatchNodes}</section>;
+    } else {
+      return (
+        <section className="teamList display--row one-card">
+          <div className="team card card--square">
+            <header className="card__header">
+              <h2 className="card__title">Pas de match en ce moment</h2>
+            </header>
+          </div>
+        </section>
+      );
     }
-
-    return <section className="teamList display--row">{MatchNodes}</section>;
   }
 }
 

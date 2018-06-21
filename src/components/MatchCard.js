@@ -15,10 +15,15 @@ class MatchCard extends Component {
                 {this.props.home_team.country}
               </h2>
             </div>
-            <div className="match__item match__score">
-              {this.props.home_team.goals}
-              -
-              {this.props.away_team.goals}
+            <div className="match__item match__score match__score--large">
+              <div>
+                <h1 className="match__time">{this.props.time}</h1>
+              </div>
+              <div className="score--large">
+                {this.props.home_team.goals}
+                -
+                {this.props.away_team.goals}
+              </div>
             </div>
             <div className="match__item">
               <TeamFlag code={this.props.away_team.code} size={64} />
@@ -30,6 +35,7 @@ class MatchCard extends Component {
           <div className="card__content">
             <h5 className="match__venue">{this.props.venue}</h5>
             <h3 className="match__location">{this.props.location}</h3>
+
             <Moment
               className="match__datetime"
               format={this.props.format}
