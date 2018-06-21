@@ -17,7 +17,7 @@ const App = () => (
       <header>
         <div>
           <div className="logo" />
-          <h1>⚽ Le Mondial du Slip️ 🏆</h1>
+          <h1>Le Mondial ⚽ 🏆 du Slip️</h1>
           <nav className="nav">
             <ul>
               <li>
@@ -60,7 +60,7 @@ const App = () => (
       <div>
         <div className="logo" />
         <p>
-          <span className="loading__text">⚽ LE MONDIAL DU SLIP 🏆</span>
+          <span className="loading__text">LE MONDIAL ⚽ 🏆 DU SLIP</span>
         </p>
       </div>
     </div>
