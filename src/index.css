@@ -41,6 +41,7 @@ main {
 
 .container {
   margin: 0 auto;
+  width: 100%;
 }
 
 .display--column,
@@ -251,8 +252,9 @@ h1 {
 }
 
 .night h1 {
-  text-shadow: 0 1px 0px #e00f21, 1px 1px 0px #e00f21, 2px 2px 0px #e00f21,
-    3px 2px 0px #e00f21, 4px 3px 0px #e00f21;
+  /*text-shadow: 0 1px 0px #e00f21, 1px 1px 0px #e00f21, 2px 2px 0px #e00f21,
+    3px 2px 0px #e00f21, 4px 3px 0px #e00f21;*/
+  text-shadow: none;
 }
 
 .night .card__artist {
@@ -418,9 +420,9 @@ circle {
   overflow: hidden;
 }
 
-.card:hover {
-  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.1),
-    0px 1px 4px rgba(0, 0, 0, 0.1), inset 1px 1px 0px rgba(255, 255, 255, 0.2);
+.card {
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 4px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(255, 255, 255, 0.1);
 }
 
 .card:hover .card__cover {
@@ -1133,6 +1135,8 @@ footer {
   font-size: 14px;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 4px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
   border-radius: 3px;
@@ -1411,5 +1415,12 @@ footer {
   .card__image img {
     width: 128px;
     height: 128px;
+  }
+  .group .card__image img {
+    width: 16px;
+    height: 16px;
+  }
+  .one-card .team .card__title {
+    font-size: 28px;
   }
 }

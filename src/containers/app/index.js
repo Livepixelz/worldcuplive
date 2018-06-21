@@ -17,7 +17,7 @@ const App = () => (
       <header>
         <div>
           <div className="logo" />
-          <h1>LE MONDIAL DU SLIP</h1>
+          <h1>⚽ Le Mondial du Slip️ 🏆</h1>
           <nav className="nav">
             <ul>
               <li>
@@ -42,16 +42,12 @@ const App = () => (
           </nav>
         </div>
       </header>
-      <main>
-        <section id="react" className="container">
-          <main>
-            <Route exact path="/ffs/" component={Home} />
-            <Route exact path="/ffs/live" component={Live} />
-            <Route exact path="/ffs/today" component={Today} />
-            <Route exact path="/ffs/equipes" component={Teams} />
-            <Route exact path="/ffs/groupes" component={Groups} />
-          </main>
-        </section>
+      <main id="react" className="container">
+        <Route exact path="/ffs/" component={Home} />
+        <Route exact path="/ffs/live" component={Live} />
+        <Route exact path="/ffs/today" component={Today} />
+        <Route exact path="/ffs/equipes" component={Teams} />
+        <Route exact path="/ffs/groupes" component={Groups} />
       </main>
       <footer className="prodby">
         by{' '}
@@ -64,7 +60,7 @@ const App = () => (
       <div>
         <div className="logo" />
         <p>
-          <span className="loading__text">CHARGEMENT</span>
+          <span className="loading__text">⚽ LE MONDIAL DU SLIP 🏆</span>
         </p>
       </div>
     </div>
