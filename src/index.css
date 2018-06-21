@@ -1096,7 +1096,7 @@ footer {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 15px;
   height: 40px;
 }
 
@@ -1129,7 +1129,7 @@ footer {
   border-radius: 3px;
   transition: 0.5s all ease;
   position: relative;
-  margin: 0 10px;
+  margin: 0 5px;
   counter-increment: chart;
   text-decoration: none;
   color: #fff;
@@ -1365,6 +1365,10 @@ footer {
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 24px;
+  }
+
+  .nav ul li a {
+    font-size: 9px;
   }
   .wrapper {
     flex-direction: column;
