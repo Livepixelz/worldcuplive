@@ -63,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/containers/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
-              <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -116,8 +116,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="1417" column="19" lean-forward="false" selection-start-line="1417" selection-start-column="19" selection-end-line="1417" selection-end-column="19" />
+            <state relative-caret-position="623">
+              <caret line="1416" column="22" lean-forward="false" selection-start-line="1416" selection-start-column="22" selection-end-line="1416" selection-end-column="22" />
               <folding>
                 <element signature="e#503#5080#2" expanded="true" />
               </folding>
@@ -245,12 +245,6 @@
             <path>
               <item name="ffs" type="b2602c69:ProjectViewProjectNode" />
               <item name="ffs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="build" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ffs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ffs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -346,7 +340,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35257000" />
+    <option name="totallyTimeSpent" value="35332000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -854,7 +848,7 @@
     <entry file="file://$PROJECT_DIR$/src/containers/app/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -863,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="1417" column="19" lean-forward="false" selection-start-line="1417" selection-start-column="19" selection-end-line="1417" selection-end-column="19" />
+        <state relative-caret-position="623">
+          <caret line="1416" column="22" lean-forward="false" selection-start-line="1416" selection-start-column="22" selection-end-line="1416" selection-end-column="22" />
           <folding>
             <element signature="e#503#5080#2" expanded="true" />
           </folding>
