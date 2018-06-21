@@ -48,7 +48,7 @@ const App = () => (
         </span>
       </footer>
     </div>
-    <div className="loading__wrapper loaded">
+    <div className="loading__wrapper">
       <div>
         <div className="logo" />
         <p>
