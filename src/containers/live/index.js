@@ -34,7 +34,7 @@ class Live extends React.Component {
           document.querySelector('.loading__wrapper').classList.add('loaded');
           console.log(err);
         });
-    }, 10000);
+    }, 60000);
   }
 
   render() {
