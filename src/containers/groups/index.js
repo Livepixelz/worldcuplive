@@ -35,9 +35,6 @@ class Groups extends React.Component {
   }
 
   render() {
-    var ladder = [];
-    var group1;
-    var group2;
     if (this.state.data.length > 0) {
       var TeamNodes = this.state.data.map(function(g, i) {
         var teamGroup = g.group;
@@ -64,7 +61,7 @@ class Groups extends React.Component {
           <div className="card card--square group" key={i}>
             <header className="card__header">
               <h2 className="card__title card__title--large">
-                {teamGroup.letter}
+                <small>Groupe</small> {teamGroup.letter}
               </h2>
             </header>
             <div className="card__content">
@@ -75,7 +72,7 @@ class Groups extends React.Component {
                     <th>V</th>
                     <th>N</th>
                     <th>D</th>
-                    <th>Points</th>
+                    <th>Pts</th>
                   </tr>
                 </thead>
                 <tbody>{list}</tbody>
@@ -85,7 +82,6 @@ class Groups extends React.Component {
         );
       });
     }
-    console.log(ladder);
     return <section className="teamList display--column">{TeamNodes}</section>;
   }
 }

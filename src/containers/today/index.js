@@ -1,10 +1,10 @@
 import React from 'react';
 import MatchCard from '../../components/MatchCard.js';
 
-class Home extends React.Component {
+class Today extends React.Component {
   constructor(props) {
     super(props);
-    this.url = `https://worldcup.sfg.io/matches?by_date=DESC`;
+    this.url = `http://worldcup.sfg.io/matches/today`;
     this.state = { data: [] };
   }
 
@@ -36,7 +36,7 @@ class Home extends React.Component {
   render() {
     if (this.state.data.length > 0) {
       var MatchNodes = this.state.data.map(function(match, i) {
-        if (match.status !== 'future') {
+        if (match.status === 'future') {
           return (
             <MatchCard
               venue={match.venue}
@@ -49,7 +49,7 @@ class Home extends React.Component {
               datetime={match.datetime}
               winner={match.winner}
               winner_code={match.winner_code}
-              format="YYYY/MM/DD"
+              format="HH:mm:ss"
             />
           );
         }
@@ -60,4 +60,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Today;
