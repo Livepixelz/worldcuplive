@@ -15,6 +15,24 @@ class Live extends React.Component {
   componentDidMount() {
     let localslip = this;
     let data = {};
+    fetch(this.url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(result) {
+        data = result;
+        setTimeout(function() {
+          localslip.setState({ data: data });
+          document.querySelector('.loading__wrapper').classList.add('loaded');
+        }, 2000);
+      })
+      .catch(function(err) {
+        localslip.setState({
+          error: 'Trop de requêtes 👇 ! Calme la gâ️chette ⌛'
+        });
+        document.querySelector('.loading__wrapper').classList.add('loaded');
+        console.log(err);
+      });
     localslip.interval = setInterval(() => {
       fetch(this.url)
         .then(function(response) {
