@@ -4,7 +4,7 @@ import MatchCard from '../../components/MatchCard.js';
 class Today extends React.Component {
   constructor(props) {
     super(props);
-    this.url = `http://worldcup.sfg.io/matches/today`;
+    this.url = `https://worldcup.sfg.io/matches/today`;
     this.state = { data: [] };
   }
 
