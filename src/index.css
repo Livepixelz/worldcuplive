@@ -344,6 +344,9 @@ circle {
   text-align: center;
 }
 
+.card__scores--stats tr > * {
+  width: 33.333%;
+}
 .card__scores--stats td {
   background-color: #284384 !important;
 }
@@ -1410,6 +1413,9 @@ footer {
 @media screen and (min-width: 1600px) {
   .card__title--small {
     font-size: 48px;
+  }
+  .card__scores {
+    font-size: 34px;
   }
 
   .card__image img {
