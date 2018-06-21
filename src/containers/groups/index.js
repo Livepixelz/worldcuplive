@@ -14,7 +14,6 @@ class Groups extends React.Component {
   }
 
   componentDidMount() {
-    console.log('cdm');
     let localslip = this;
     let data = {};
 
@@ -30,6 +29,7 @@ class Groups extends React.Component {
         }, 2000);
       })
       .catch(function(err) {
+        document.querySelector('.loading__wrapper').classList.add('loaded');
         console.log(err);
       });
   }
@@ -38,8 +38,6 @@ class Groups extends React.Component {
     if (this.state.data.length > 0) {
       var TeamNodes = this.state.data.map(function(g, i) {
         var teamGroup = g.group;
-        var letter = teamGroup.letter;
-
         var list = teamGroup.teams.map(function(t, j) {
           var team = t.team;
           console.log(team);

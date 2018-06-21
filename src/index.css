@@ -342,6 +342,10 @@ circle {
   text-align: center;
 }
 
+.card__scores--stats td {
+  background-color: #284384 !important;
+}
+
 .teamList.display--row .card.match {
   flex-direction: column;
 }
@@ -840,6 +844,39 @@ circle {
   }
 }
 
+.ledon {
+  -webkit-animation: onair 2s linear infinite;
+  -moz-animation: onair 2s linear infinite;
+  -ms-animation: onair 2s linear infinite;
+  -o-animation: onair 2s linear infinite;
+  animation: onair 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes onair {
+  0% {
+    background-color: #680c14;
+  }
+  50% {
+    background-color: #e00f21;
+  }
+  100% {
+    background-color: #680c14;
+  }
+}
+
+@-webkit-keyframes onair {
+  0% {
+    background-color: #680c14;
+  }
+  50% {
+    background-color: #e00f21;
+  }
+  100% {
+    background-color: #680c14;
+  }
+}
+
 .enterLeft {
   -webkit-animation: enterLeft 1s cubic-bezier(0.86, 0, 0.07, 1);
   -moz-animation: enterLeft 1s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1067,16 +1104,28 @@ footer {
   flex: 1 1 auto;
   display: flex;
 }
-
+.live__led {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.live__led + span {
+  display: inline-block;
+}
 .nav ul li a {
   flex: 1;
   display: flex;
+  flex-direction: row;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 14px;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
   border-radius: 3px;
   transition: 0.5s all ease;
   position: relative;
@@ -1283,7 +1332,7 @@ footer {
   }
 
   .nav ul li a {
-    font-size: 12px;
+    font-size: 9px;
   }
   .wrapper {
     display: grid;

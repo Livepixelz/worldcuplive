@@ -13,7 +13,6 @@ class Teams extends React.Component {
     document.querySelector('.loading__wrapper').classList.remove('loaded');
   }
   componentDidMount() {
-    console.log('cdm');
     let localslip = this;
     let data = {};
 
@@ -30,6 +29,7 @@ class Teams extends React.Component {
         }, 2000);
       })
       .catch(function(err) {
+        document.querySelector('.loading__wrapper').classList.add('loaded');
         console.log(err);
       });
   }

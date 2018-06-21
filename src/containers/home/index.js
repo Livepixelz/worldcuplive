@@ -13,7 +13,6 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    console.log('cdm');
     let localslip = this;
     let data = {};
 
@@ -29,6 +28,7 @@ class Home extends React.Component {
         }, 2000);
       })
       .catch(function(err) {
+        document.querySelector('.loading__wrapper').classList.add('loaded');
         console.log(err);
       });
   }
@@ -45,11 +45,14 @@ class Home extends React.Component {
               time={match.time}
               fifa_id={match.fifa_id}
               home_team={match.home_team}
+              home_team_statistics={match.home_team_statistics}
               away_team={match.away_team}
+              away_team_statistics={match.away_team_statistics}
               datetime={match.datetime}
               winner={match.winner}
               winner_code={match.winner_code}
               format="YYYY/MM/DD"
+              key={i}
             />
           );
         }
