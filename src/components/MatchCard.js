@@ -72,6 +72,35 @@ class MatchCard extends Component {
           </div>
         </div>
       );
+    } else if (this.props.match.status === 'future') {
+      return (
+        <div className="card card--square match">
+          <header className="card__header">
+            <div className="match__item">
+              <TeamFlag code={this.props.match.home_team.code} size={64} />
+              <h2 className="card__title card__title--small">
+                {this.props.match.home_team.country}
+              </h2>
+            </div>
+            <div className="match__item score--small">VS</div>
+            <div className="match__item">
+              <TeamFlag code={this.props.match.away_team.code} size={64} />
+              <h2 className="card__title card__title--small">
+                {this.props.match.away_team.country}
+              </h2>
+            </div>
+          </header>
+          <div className="card__content">
+            <h5 className="match__venue">{this.props.match.venue}</h5>
+            <h3 className="match__location">{this.props.match.location}</h3>
+            <Moment
+              className="match__datetime"
+              format={this.props.format}
+              date={this.props.match.datetime}
+            />
+          </div>
+        </div>
+      );
     } else {
       return (
         <div className="card card--square match">

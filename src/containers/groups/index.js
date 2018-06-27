@@ -4,7 +4,6 @@ import TeamFlag from '../../components/TeamFlag.js';
 class Groups extends React.Component {
   constructor(props) {
     super(props);
-
     this.url = `https://worldcup.sfg.io/teams/group_results`;
     this.state = { data: [], error: '' };
   }
@@ -37,9 +36,9 @@ class Groups extends React.Component {
   render() {
     if (this.state.data.length > 0) {
       var TeamNodes = this.state.data.map(function(g, i) {
-        var teamGroup = g.group;
-        var list = teamGroup.teams.map(function(t, j) {
-          var team = t.team;
+        var teamGroup = g;
+        var list = teamGroup.ordered_teams.map(function(t, j) {
+          var team = t;
           console.log(team);
           return (
             <tr key={j}>
