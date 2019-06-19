@@ -6,6 +6,7 @@ class Home extends React.Component {
     super(props);
     this.url = `https://worldcup.sfg.io/matches?by_date=DESC`;
     this.state = { data: [], error: '' };
+    console.log('HELLO');
   }
 
   componentWillUnmount() {
@@ -22,10 +23,9 @@ class Home extends React.Component {
       })
       .then(function(result) {
         data = result;
-        setTimeout(function() {
-          localslip.setState({ data: data });
-          document.querySelector('.loading__wrapper').classList.add('loaded');
-        }, 2000);
+        console.log(data);
+        localslip.setState({ data: data });
+        document.querySelector('.loading__wrapper').classList.add('loaded');
       })
       .catch(function(err) {
         localslip.setState({
@@ -36,16 +36,18 @@ class Home extends React.Component {
       });
   }
 
-  render() {
-    if (this.state.data.length > 0) {
-      var MatchNodes = this.state.data.map(function(match, i) {
-        if (match.status !== 'future') {
-          return <MatchCard match={match} format="YYYY/MM/DD" key={i} />;
-        }
-      });
-    }
+  renderList() {
+    return this.state.data.map(function(match, i) {
+      if (match.status !== 'future') {
+        return <MatchCard match={match} format="YYYY/MM/DD" key={i} />;
+      }
+    });
+  }
 
-    return <section className="teamList display--row">{MatchNodes}</section>;
+  render() {
+    return (
+      <section className="teamList display--row">{this.renderList()}</section>
+    );
   }
 }
 

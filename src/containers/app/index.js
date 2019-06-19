@@ -17,37 +17,37 @@ const App = () => (
       <header>
         <div>
           <div className="logo" />
-          <h1>Le Mondial ⚽ 🏆 du Slip️</h1>
+          <h1>Le Mondial en Live</h1>
           <nav className="nav">
             <ul>
               <li>
-                <Link to="/ffs/live">
+                <Link to="/live">
                   <span className="live__led ledon" />
                   <span>Live</span>
                 </Link>
               </li>
               <li>
-                <Link to="/ffs/today">Matchs du jour</Link>
+                <Link to="/today">Matchs du jour</Link>
               </li>
               <li>
-                <Link to="/ffs/">Resultats</Link>
+                <Link to="/">Resultats</Link>
               </li>
               <li>
-                <Link to="/ffs/groupes">Groupes</Link>
+                <Link to="/groupes">Groupes</Link>
               </li>
               <li>
-                <Link to="/ffs/equipes">Equipes</Link>
+                <Link to="/equipes">Equipes</Link>
               </li>
             </ul>
           </nav>
         </div>
       </header>
       <main id="react" className="container">
-        <Route exact path="/ffs/" component={Home} />
-        <Route exact path="/ffs/live" component={Live} />
-        <Route exact path="/ffs/today" component={Today} />
-        <Route exact path="/ffs/equipes" component={Teams} />
-        <Route exact path="/ffs/groupes" component={Groups} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/live" component={Live} />
+        <Route exact path="/today" component={Today} />
+        <Route exact path="/equipes" component={Teams} />
+        <Route exact path="/groupes" component={Groups} />
       </main>
       <footer className="prodby">
         by{' '}
@@ -60,7 +60,19 @@ const App = () => (
       <div>
         <div className="logo" />
         <p>
-          <span className="loading__text">LE MONDIAL ⚽ 🏆 DU SLIP</span>
+          <span className="loading__text">
+            Le Mondial{' '}
+            <span aria-label="football" role="img">
+              ⚽
+            </span>{' '}
+            <span arial-label="cup" role="img">
+              🏆
+            </span>{' '}
+            <span aria-label="football" role="img">
+              ⚽
+            </span>{' '}
+            en Live
+          </span>
         </p>
       </div>
     </div>

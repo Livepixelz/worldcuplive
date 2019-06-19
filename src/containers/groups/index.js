@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamFlag from '../../components/TeamFlag.js';
+import TeamCard from '../../components/TeamCard';
 
 class Groups extends React.Component {
   constructor(props) {
@@ -49,6 +50,9 @@ class Groups extends React.Component {
               <td>{team.wins}</td>
               <td>{team.draws}</td>
               <td>{team.losses}</td>
+              <td>{team.goals_for}</td>
+              <td>{team.goals_against}</td>
+              <td>{team.goal_differential}</td>
               <td>{team.points}</td>
             </tr>
           );
@@ -69,6 +73,9 @@ class Groups extends React.Component {
                     <th>V</th>
                     <th>N</th>
                     <th>D</th>
+                    <th>BP</th>
+                    <th>BC</th>
+                    <th>GA</th>
                     <th>Pts</th>
                   </tr>
                 </thead>
