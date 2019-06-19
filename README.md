@@ -1,4 +1,6 @@
-# LE MONDIAL DU SLIP
+# LE MONDIAL EN LIVE
+
+Tous les résultats du mondial féminin de football de 2019
 
 ## Installation
 
