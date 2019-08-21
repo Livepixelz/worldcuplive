@@ -6,7 +6,7 @@ http://worldcup2019.livepixelz.com/groupes
 ## Installation
 
 ```bash
-git clone https://github.com/Livepixelz/ffs
+git clone https://github.com/Livepixelz/worldcuplive
 cd ffs
 yarn
 ```
