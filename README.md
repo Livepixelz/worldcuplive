@@ -7,7 +7,7 @@ http://worldcup2019.livepixelz.com/groupes
 
 ```bash
 git clone https://github.com/Livepixelz/worldcuplive
-cd ffs
+cd worldcuplive
 yarn
 ```
 
